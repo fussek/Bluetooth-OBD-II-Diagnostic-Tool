@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mod_9.Mod9Activity">
+
+
+    <Spinner
+        android:id="@+id/mod9list"
+        android:layout_width="195dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="12dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:backgroundTint="#DCDCDC"
+        android:spinnerMode="dropdown"
+        tools:fontFamily="monospace"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="95dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="44dp"
+        android:onClick="onClickStart"
+        android:text="@string/connect"
+        android:backgroundTint="@color/colorAccent2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="74dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="49dp"
+        android:onClick="onClickSend"
+        android:text="@string/send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mod9list"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="281dp"
+        android:layout_height="319dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="6dp"
+        android:background="#DCDCDC"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:text="Mod 9: Request Vehicle Information"
+        tools:fontFamily="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mod9list" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="95dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="44dp"
+        android:onClick="onClickStop"
+        android:text="@string/disconnect"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="88dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="140dp"
+        android:alpha="0.25"
+        android:onClick="onClickClear"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
