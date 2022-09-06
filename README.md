@@ -26,9 +26,7 @@ Flow for handling terminal response:
 Example response calculator method:
 
 ![calculator](calculator.PNG) 
-Xxxxxxxxxxx
 
-    Xxxxxxxxx
 
 # Types of coding
 ## Arithmetic
@@ -64,5 +62,5 @@ A narrow type of parameters is encoded in ASCII format, it comes on a larger qua
 # Example outputs
 Received from various tests on 2016 Mitsubishi ASX, 2005 Fiat Panda and 2004 Seat Leon.
 
-![examples](4.PNG) 
+![examples](examples.PNG) 
 
